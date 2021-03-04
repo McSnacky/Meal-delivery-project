@@ -1,0 +1,133 @@
+/* Big tablet to 1200px */
+@media only screen and (max-width: 1200px) {}
+
+
+/* Tablets from 767px to 1023px */
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+/* Larger phones: from 480px to 767px */
+@media only screen and (max-width: 767px) {
+  .section-header__title {
+    font-size: 2.5rem;
+  }
+
+  .section-header {
+    margin: 0;
+  }
+
+  /* mobile navigation  */
+   .navigation__link-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    text-align: center;
+    display: none;
+  }
+
+  .navigation__link-container div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: none;
+  }
+
+  .navigation__mobile--open {
+    display: block;
+  }
+
+  .navigation__mobile--close {
+    display: none;
+  }
+
+  .navigation__link:link,
+  .navigation__link:visited {
+    font-size: 2.5rem;
+    color: #e67e22;
+    display: none;
+  }
+
+  .navigation__link:hover,
+  .navigation__link:focus {
+    border-bottom: 0px;
+    color: #e67e22;
+    outline: none;
+  }
+
+  /* Flexbox  */
+  .col--4 {
+    width: 50%;
+  }
+
+  .col--3 {
+    width: 100%;
+  }
+
+  .col--2 {
+    width: 100%;
+  }
+
+  .col--2of3 {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .meal-collage {
+    grid-template-areas: "a b b"
+      "c b b"
+      "d d e"
+      "d d f";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+
+  .meal-collage__image--7 {
+    display: none;
+  }
+
+  .meal-collage__image--8 {
+    display: none;
+  }
+
+  .how-it-works__image-container {
+    margin: 0;
+    text-align: center;
+  }
+
+  .how-it-works__image {
+    display: none;
+  }
+
+  .how-it-works__download-button {
+    height: 6em;
+    display: block;
+    margin: 1em auto;
+  }
+
+  .reviews cite {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .heading-primary {
+    font-size: 2.5rem;
+  }
+  
+  .col--4 {
+    width: 100%;
+  }
+}

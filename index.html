@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Omnifood</title>
+
+  <!-- This is to make the content responsive to the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic SEO -->
+  <meta name="description"
+    content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
+
+  <!-- import google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
+
+  <!-- Import animate.css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- import css stylesheets. Nomalize used to make it look the same at every browser. Grid used to make responsive grid structures. -->
+  <link rel="stylesheet" type="text/css" href="Resources/CSS/styles.css">
+  <link rel="stylesheet" type="text/css" href="Resources/CSS/querries.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="Resources\Favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Resources\Favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Resources\Favicons/favicon-16x16.png">
+  <link rel="manifest" href="Resources\Favicons/site.webmanifest">
+  <link rel="mask-icon" href="Resources\Favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="Resources\Favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="Resources\Favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation row">
+      <img src="Resources/Images/logo-white.png" alt="Omnifood logo" class="navigation__logo">
+      <img src="Resources/Images/logo.png" alt="Omnifood logo" class="navigation__logo--black">
+      <div class="navigation__link-container js--nav-open">
+        <div class="js--nav-open">
+          <a class="navigation__link js--nav-open" href="#meal-collage">Food delivery</a>
+          <a class="navigation__link js--nav-open" href="#how-it-works">How it works</a>
+          <a class="navigation__link js--nav-open" href="#our-cities">Our cities</a>
+          <a class="navigation__link js--nav-open" href="#contact">Sign up</a>
+        </div class="js--nav-open">
+      </div>
+      <a class="navigation__mobile--open js--open-menu" onclick="openMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+      <a class="navigation__mobile--close js--close-menu" onclick="closeMenu()"><ion-icon name="close-outline"></ion-icon></a>
+    </nav>
+    <div class="header__text-box row">
+      <h1 class="heading-primary">Goodbye junk food. <br> Hello super healthy meals.</h1>
+      <a href="#contact" class="btn btn--orange">I'm hungry</a>
+      <a href="#features" class="btn btn--orange-outline">Show me more</a>
+    </div>
+  </header>
+
+  <section id="features" class="features section row js--features">
+    <div class="section-header">
+      <h2 class="section-header__title">Get food fast — not fast food</h2>
+      <hr class="section-header__seperator">
+      <p class="medium-text">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy.
+        No time for cooking. So let us take care of that, we're really good at it, we promise! </p>
+    </div>
+    <div class="features__columns flex-row js--wp-1">
+      <div class="col--4">
+        <ion-icon name="infinite-outline" class="features__columns__icon features__columns__icon--orange"></ion-icon>
+        <h3 class="columns__header">Up to 365 days/year</h3>
+        <p class="small-text">Never cook again! We really mean that. Our subscription plans include up to 365 days/year
+          coverage. You can also choose to order more flexibly if that's your style. </p>
+      </div>
+      <div class="col--4">
+        <ion-icon name="timer-outline" class="features__columns__icon features__columns__icon--orange"></ion-icon>
+        <h3 class="columns__header">Ready in 20 minutes</h3>
+        <p class="small-text">You're only twenty minutes away from your delicious and super healthy meals delivered
+          right to your home. We work with the best chefs in each town to ensure that you're 100% happy. </p>
+      </div>
+      <div class="col--4">
+        <ion-icon name="nutrition-outline" class="features__columns__icon features__columns__icon--orange"></ion-icon>
+        <h3 class="columns__header">100% organic</h3>
+        <p class="small-text">All our vegetables are fresh, organic and local. Animals are raised without added hormones
+          or antibiotics. Good for your health, the environment, and it also tastes better! </p>
+      </div>
+      <div class="col--4">
+        <ion-icon name="cart-outline" class="features__columns__icon features__columns__icon--orange"></ion-icon>
+        <h3 class="columns__header">Order anything</h3>
+        <p class="small-text">We don't limit your creativity, which means you can order whatever you feel like. You can
+          also choose from our menu containing over 100 delicious meals. It's up to you! </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="meal-collage" class="meal-collage">
+    <div class="meal-collage__image--1 meal-collage__image-container">
+      <img src="Resources/Images/1.jpg" alt="food image 1" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--2 meal-collage__image-container">
+      <img src="Resources/Images/2.jpg" alt="food image 2" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--3 meal-collage__image-container">
+      <img src="Resources/Images/3.jpg" alt="food image 3" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--4 meal-collage__image-container">
+      <img src="Resources/Images/4.jpg" alt="food image 4" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--5 meal-collage__image-container">
+      <img src="Resources/Images/5.jpg" alt="food image 5" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--6 meal-collage__image-container">
+      <img src="Resources/Images/6.jpg" alt="food image 6" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--7 meal-collage__image-container">
+      <img src="Resources/Images/7.jpg" alt="food image 7" class="meal-collage__image">
+    </div>
+    <div class="meal-collage__image--8 meal-collage__image-container">
+      <img src="Resources/Images/8.jpg" alt="food image 8" class="meal-collage__image">
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="row section">
+      <div class="section-header">
+        <h2 class="section-header__title">How it works - simple as 1, 2, 3</h2>
+        <hr class="section-header__seperator">
+      </div>
+      <div class="flex-row">
+        <div class="col--2 how-it-works__image-container">
+          <img src="Resources/Images/app-iPhone.png" alt="Application shown on iphone" class="how-it-works__image js--wp-2">
+        </div>
+        <div class="how-it-works__steps col--2">
+          <div class="how-it-works__step">
+            <div class="enumerator enumerator--orange">1</div>
+            <p class="medium-text"> Choose the subscription plan that best fits your needs and sign up today.</p>
+          </div>
+          <div class="how-it-works__step">
+            <div class="enumerator enumerator--orange">2</div>
+            <p class="medium-text"> Order your delicious meal using our mobile app or website. Or you can even call us!
+            </p>
+          </div>
+          <div class="how-it-works__step">
+            <div class="enumerator enumerator--orange">3</div>
+            <p class="medium-text"> Enjoy your meal after less than 20 minutes. See you the next time!</p>
+          </div>
+          <a href="#"><img src="Resources\Images\download-app.svg" alt="App store button"
+              class="how-it-works__download-button"></a>
+          <a href="#"><img src="Resources\Images\download-app-android.png" alt="Play store button"
+              class="how-it-works__download-button"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="our-cities" class="row section our-cities">
+    <div class="section-header">
+      <h2 class="section-header__title">We're currently in these cities</h2>
+      <hr class="section-header__seperator">
+    </div>
+    <div class="flex-row js--wp-3">
+      <div class="col--4">
+        <img src="Resources\Images\lisbon-3.jpg" alt="Photo of lisbon" class="our-cities__image">
+        <h3 class="columns__header">Lisbon</h3>
+        <ion-icon name="people-outline"></ion-icon>
+        <p class="medium-text">1600+ happy eaters</p>
+        <ion-icon name="star-outline"></ion-icon>
+        <p class="medium-text">60+ top chefs</p>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <a href="" class="medium-text">@omnifood_lx</a>
+      </div>
+      <div class="col--4">
+        <img src="Resources\Images\san-francisco.jpg" alt="Image of San francisco" class="our-cities__image">
+        <h3 class="columns__header">San francisco</h3>
+        <ion-icon name="people-outline"></ion-icon>
+        <p class="medium-text">3700+ happy eaters</p>
+        <ion-icon name="star-outline"></ion-icon>
+        <p class="medium-text">160+ top chefs</p>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <a href="" class="medium-text">@omnifood_sf</a>
+      </div>
+      <div class="col--4">
+        <img src="Resources\Images\berlin.jpg" alt="Image of berlin" class="our-cities__image">
+        <h3 class="columns__header">Berlin</h3>
+        <ion-icon name="people-outline"></ion-icon>
+        <p class="medium-text">1200+ happy eaters</p>
+        <ion-icon name="star-outline"></ion-icon>
+        <p class="medium-text">50+ top chefs</p>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <a href="" class="medium-text">@omnifood_berlin</a>
+      </div>
+      <div class="col--4">
+        <img src="Resources\Images\london.jpg" alt="Image of London" class="our-cities__image">
+        <h3 class="columns__header">London</h3>
+        <ion-icon name="people-outline"></ion-icon>
+        <p class="medium-text">2300+ happy eaters </p>
+        <ion-icon name="star-outline"></ion-icon>
+        <p class="medium-text">110+ top chefs </p>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <a href="" class="medium-text">@omnifood_london</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="row section">
+      <div class="section-header">
+        <h2 class="section-header__title">Our customers can't live without us</h2>
+        <hr class="section-header__seperator">
+      </div>
+      <div class="reviews__body flex-row">
+        <div class="reviews__review col--3">
+          <blockquote>
+            <span>"</span> Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking,
+            so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily
+            meals!<span>"</span>
+            <br>
+            <cite>
+              <img src="Resources\Images\customer-1.jpg" alt=""> Alberto Duncan
+            </cite>
+          </blockquote>
+        </div>
+        <div class="reviews__review col--3">
+          <blockquote>
+            <span>"</span>Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
+            delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in
+            love!<span>"</span>
+            <br>
+            <cite>
+              <img src="Resources\Images\customer-2.jpg" alt=""> Joana Silva
+            </cite>
+          </blockquote>
+        </div>
+        <div class="reviews__review col--3">
+          <blockquote>
+            <span>"</span>I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of
+            them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great
+            work!<span>"</span>
+            <br>
+            <cite>
+              <img src="Resources\Images\customer-3.jpg" alt=""> Milton Chapman
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="row section">
+      <div class="section-header">
+        <h2 class="section-header__title">Start eating healthy today</h2>
+        <hr class="section-header__seperator">
+      </div>
+      <div class="flex-row">
+
+        <div class="col--3">
+          <div class="pricing-card">
+            <div class="pricing-card__heading">
+              <h2 class="columns__header">Premium</h2>
+              <p class="medium-text"><span>$399 </span>/ month</p>
+              <p>That's only 13.30$ per meal</p>
+            </div>
+            <div class="pricing-card__body">
+              <ul>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>1 meal every day
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Order 24/7
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Access to newest creations
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Free delivery
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-card__footer"><a href="" class="btn btn--orange">Sign up now</a></div>
+          </div>
+        </div>
+
+        <div class="col--3">
+          <div class="pricing-card">
+            <div class="pricing-card__heading">
+              <h2 class="columns__header">Pro</h2>
+              <p class="medium-text"><span>$149 </span>/ month</p>
+              <p>That's only 14.90$ per meal</p>
+            </div>
+            <div class="pricing-card__body">
+              <ul>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  1 meal 10 days/month
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  Order 24/7
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  Access to newest creations
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  Free delivery
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-card__footer"><a href="" class="btn btn--orange-outline">Sign up now</a></div>
+          </div>
+        </div>
+
+        <div class="col--3">
+          <div class="pricing-card">
+            <div class="pricing-card__heading">
+              <h2 class="columns__header">Starter</h2>
+              <p class="medium-text"><span>19$ </span>/ meal</p>
+              <p>&nbsp</p>
+            </div>
+            <div class="pricing-card__body">
+              <ul>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>1 meal
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Order from 8 am to 12 pm
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Acces to newest creations &nbsp&nbsp&nbsp&nbsp
+                </li>
+                <li class="medium-text">
+                  <ion-icon name="checkmark-outline"></ion-icon>Free delivery
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-card__footer"><a href="" class="btn btn--orange-outline">Sign up now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section row">
+    <div class="section-header">
+      <h2 class="section-header__title">We're happy to hear from you</h2>
+      <hr class="section-header__seperator">
+    </div>
+    <form action="#" class="contact-form" method="post">
+      <div class="flex-row">
+        <div class="col--3 medium-text">Name</div>
+        <div class="col--2of3"><input type="text" name="Name" id="Name" placeholder="Your Name" required></div>
+      </div>
+      <div class="flex-row">
+        <div class="col--3 medium-text">Email</div>
+        <div class="col--2of3"><input type="email" name="Name" id="Name" placeholder="Your email" required></div>
+      </div>
+      <div class="flex-row">
+        <div class="col--3 medium-text">How did you find us?</div>
+        <div class="col--2of3">
+          <select name="find-us" id="find-us">
+            <option value="Friends" selected>Friends</option>
+            <option value="Search">Search enginge</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="col--3 medium-text">Newsletter?</div>
+        <div class="col--2of3 medium-text"><input type="checkbox" name="News" id="News" checked> Yes, please</div>
+      </div>
+      <div class="flex-row">
+        <div class="col--3 medium-text">Drop us a line..</div>
+        <div class="col--2of3"><textarea name="message" id="message" placeholder="your text"></textarea></div>
+      </div>
+      <div class="flex-row">
+        <div class="col--3 medium-text">&nbsp</div>
+        <input type="submit" name="submit" value="Send now" class="btn btn--orange">
+      </div>
+    </form>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="row flex-row">
+      <div class="col--2">
+        <ul class="footer__nav">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">IOS App</a></li>
+          <li><a href="#">Android App</a></li>
+        </ul>
+      </div>
+      <div class="col--2">
+        <ul class="footer__social-links">
+          <li>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="logo-google"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </li>
+          <li>
+            <ion-icon></ion-icon>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2015 by Omnifood. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <!-- Script so media querries work on older devices, respond.js -->
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <!-- Script for HTML5SHIV, for legacy browsers -->
+  <!--[if lt IE 9]>
+    <script src="Vendors\JS\html5shiv.min.js"></script>
+  <![endif]-->
+  <!-- JQuery script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- script for Waypoints scrolling jquery -->
+  <script src="Vendors/JS/jquery.waypoints.min.js"></script>
+  <script src="Resources/JS/script.js"></script>
+  <script src="Resources/JS/mobileNav.js"></script>
+</body>
+
+</html>
