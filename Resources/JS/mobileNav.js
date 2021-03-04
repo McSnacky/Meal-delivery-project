@@ -21,11 +21,13 @@ var isItMobile = mediaQuery.matches
 var windowHeight = false;
 
 function needStickyNav(a, b){
-    if (a && b == false && document.getElementsByClassName('navigation row')[0].classList.contains("sticky") == false){
-        document.getElementsByClassName('navigation row')[0].classList.add("sticky")
+    if (a && b == false && document.getElementsByClassName('navigation')[0].classList.contains("sticky") == false){
+        document.getElementsByClassName('navigation')[0].classList.add("sticky")
+        document.getElementsByClassName('navigation')[0].classList.remove("row")
     }
-    else if ((b == true || a == false) && document.getElementsByClassName('navigation row')[0].classList.contains("sticky") == true){
-        document.getElementsByClassName('navigation row')[0].classList.remove("sticky")
+    else if ((b == true || a == false) && document.getElementsByClassName('navigation')[0].classList.contains("sticky") == true){
+        document.getElementsByClassName('navigation')[0].classList.remove("sticky")
+        document.getElementsByClassName('navigation')[0].classList.add("row")
     }
 }
 
